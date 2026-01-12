@@ -51,24 +51,62 @@ data/yoga_docs/ -> yoga knowledge base (.txt files)
 faiss_index/    -> FAISS index generated locally
 
 ------------------------------------------------------------
-HOW TO RUN ON KAGGLE
+RUN ON KAGGLE (EVALUATOR INSTRUCTIONS)
 ------------------------------------------------------------
-1) Add dataset:
-- yoga-kb dataset containing yoga_docs/
-  (dataset link :- https://www.kaggle.com/datasets/pratik0912/yoga-kb/data)
-  
-2) Add Kaggle Secret:
-- Label: MONGO_URI
-- Value: your MongoDB URI
 
-3) Install dependencies:
-pip install -r requirements.txt
+1) Create a new Kaggle Notebook.
+   - Go to Kaggle → Notebooks
+   - Click “New Notebook”
 
-4) Build FAISS index (Recommended command):
-python -m backend.rag.ingest
+2) Add the dataset (yoga-kb).
+   - Open the Kaggle Notebook
+   - On the right side panel, open “Input”
+   - Click “Add Input”
+   - Search: yoga-kb (dataset link :- https://www.kaggle.com/datasets/pratik0912/yoga-kb/data)
+   - Click “Add”
 
-5) Run the app (Recommended command):
-python -m frontend.app_gradio
+3) Confirm dataset location.
+   - Kaggle mounts datasets at: /kaggle/input/
+   - This dataset will be available at:
+     /kaggle/input/yoga-kb/yoga_docs/
+
+4) Download the GitHub repo ZIP.
+   - Open the GitHub repository
+   - Click “Code”
+   - Click “Download ZIP”
+   - Upload the ZIP to Kaggle Inputs
+   - Kaggle will automatically unzip the dataset.
+
+5) Copy the extracted repo file into /kaggle/working/.
+   - copy the path of the extracted file and past it in YOUR_PATH and run the code given below
+   - Run:
+     !cp -r YOUR_PATH /kaggle/working/yoga-rag-microapp
+     
+7) Go inside the project folder.
+   - Run:
+     %cd /kaggle/working/yoga-rag-microapp
+
+8) Copy yoga docs into the project knowledge base folder.
+   - Run:
+     !cp -r /kaggle/input/yoga-kb/yoga_docs /kaggle/working/yoga-rag-microapp/data/
+     !ls /kaggle/working/yoga-rag-microapp/data/yoga_docs | head
+
+9) Install dependencies.
+   - Run:
+     !pip install -r requirements.txt
+
+10) Build FAISS index.
+   - Run:
+     !python -m backend.rag.ingest
+
+11) Run the Gradio app.
+    - Run:
+      !python -m frontend.app_gradio
+
+12) Open the Gradio URL.
+    - The output will show a URL like:
+      http://127.0.0.1:7860
+    - Open it in browser to use the app
 
 Note:
 If you face import errors while running scripts directly, use the module commands above.
@@ -126,7 +164,6 @@ http://127.0.0.1:7860
 ------------------------------------------------------------
 OPTIONAL: ENABLE MONGODB LOGGING LOCALLY
 ------------------------------------------------------------
-If evaluator wants DB logging:
 
 1) Create file .env in the root folder
 2) Add:
