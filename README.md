@@ -128,20 +128,18 @@ OR
 2) Open the folder in VS Code
 - VS Code → File → Open Folder → select the project folder
 
-3) Install dependencies
-Open VS Code terminal: Terminal → New Terminal
+3) Install dependencies:
+   Open VS Code terminal: Terminal → New Terminal
+   A) Windows:
+   -python -m venv venv.
+   -venv\Scripts\activate.
+   -pip install -r requirements.txt.
+   B) Linux/Mac:
+   -python3 -m venv venv.
+   -source venv/bin/activate.
+   -pip install -r requirements.txt.
 
-A) Windows:
--python -m venv venv.
--venv\Scripts\activate.
--pip install -r requirements.txt.
-
-B) Linux/Mac:
--python3 -m venv venv.
--source venv/bin/activate.
--pip install -r requirements.txt.
-
-4) Add yoga documents (required)
+5) Add yoga documents (required)
 Put all yoga .txt docs inside:
 data/yoga_docs/
 
