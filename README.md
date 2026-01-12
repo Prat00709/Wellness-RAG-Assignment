@@ -88,20 +88,20 @@ RUN ON KAGGLE (EVALUATOR INSTRUCTIONS)
 
 8) Copy yoga docs into the project knowledge base folder.
    - Run:
-     !cp -r /kaggle/input/yoga-kb/yoga_docs /kaggle/working/yoga-rag-microapp/data/
-     !ls /kaggle/working/yoga-rag-microapp/data/yoga_docs | head
+     -!cp -r /kaggle/input/yoga-kb/yoga_docs /kaggle/working/yoga-rag-microapp/data/
+     -!ls /kaggle/working/yoga-rag-microapp/data/yoga_docs | head
 
 9) Install dependencies.
    - Run:
-     !pip install -r requirements.txt
+     -!pip install -r requirements.txt
 
 10) Build FAISS index.
    - Run:
-     !python -m backend.rag.ingest
+     -!python -m backend.rag.ingest
 
 11) Run the Gradio app.
     - Run:
-      !python -m frontend.app_gradio
+      -!python -m frontend.app_gradio
 
 12) Open the Gradio URL.
     - The output will show a URL like:
