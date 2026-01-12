@@ -108,7 +108,9 @@ RUN ON KAGGLE (EVALUATOR INSTRUCTIONS)
       http://127.0.0.1:7860
     - Open it in browser to use the app
 
-Note:
+NOTE:
+I also have attached the raw .ipynb and .py files to the repo.
+To run them in Kaggle(recommended) download the raw yoga-app.ipynb import the downloaded file into kaggle notebook and then run it.
 RUN THIS ON KAGGLE USING AN ACCELERATOR(GPU T4 x 2)
 The above commands are verified and running on kaggle.
 
