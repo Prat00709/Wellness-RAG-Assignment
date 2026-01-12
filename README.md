@@ -50,6 +50,7 @@ frontend/       -> Gradio UI app
 data/yoga_docs/ -> yoga knowledge base (.txt files)
 faiss_index/    -> FAISS index generated locally
 
+
 ------------------------------------------------------------
 RUN ON KAGGLE (EVALUATOR INSTRUCTIONS)
 ------------------------------------------------------------
@@ -114,8 +115,9 @@ To run them in Kaggle(recommended) download the raw yoga-app.ipynb import the do
 RUN THIS ON KAGGLE USING AN ACCELERATOR(GPU T4 x 2)
 The above commands are verified and running on kaggle.
 
+
 ------------------------------------------------------------
-HOW TO RUN LOCALLY (SIMPLE)
+HOW TO RUN LOCALLY 
 
 
 1) Download the project
@@ -129,15 +131,15 @@ OR
 3) Install dependencies
 Open VS Code terminal: Terminal → New Terminal
 
-Windows:
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
+-Windows:
+-python -m venv venv
+-venv\Scripts\activate
+-pip install -r requirements.txt
 
-Linux/Mac:
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+-Linux/Mac:
+-python3 -m venv venv
+-source venv/bin/activate
+-pip install -r requirements.txt
 
 4) Add yoga documents (required)
 Put all yoga .txt docs inside:
@@ -162,6 +164,9 @@ python -m frontend.app_gradio
 7) Open the link shown in terminal
 Usually:
 http://127.0.0.1:7860
+
+NOTE: THERE IS NO .apk FILE AS I HAVE USED GRADIO UI DIRECTLY IMPLEMENTED IN PYTHON NOTEBOOK.
+
 
 ------------------------------------------------------------
 OPTIONAL: ENABLE MONGODB LOGGING LOCALLY
