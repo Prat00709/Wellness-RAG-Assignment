@@ -109,8 +109,8 @@ RUN ON KAGGLE (EVALUATOR INSTRUCTIONS)
     - Open it in browser to use the app
 
 Note:
-If you face import errors while running scripts directly, use the module commands above.
-(These commands are confirmed working on Kaggle)
+RUN THIS ON KAGGLE USING AN ACCELERATOR(GPU T4 x 2)
+The above commands are verified and running on kaggle.
 
 ------------------------------------------------------------
 HOW TO RUN LOCALLY (SIMPLE)
