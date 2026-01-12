@@ -129,12 +129,12 @@ OR
 - VS Code → File → Open Folder → select the project folder
 
 3) Install dependencies:
-   Open VS Code terminal: Terminal → New Terminal
-   A) Windows:
+   -Open VS Code terminal
+A) Windows:
    -python -m venv venv.
    -venv\Scripts\activate.
    -pip install -r requirements.txt.
-   B) Linux/Mac:
+B) Linux/Mac:
    -python3 -m venv venv.
    -source venv/bin/activate.
    -pip install -r requirements.txt.
