@@ -1,0 +1,17 @@
+# virtual env
+venv/
+
+# faiss index (generated)
+faiss_index/
+
+# secrets
+.env
+
+# python cache
+__pycache__/
+*.pyc
+
+# notebooks / OS
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db

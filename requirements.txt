@@ -1,0 +1,10 @@
+langchain
+langchain-community
+faiss-cpu
+sentence-transformers
+pymongo
+gradio
+transformers
+accelerate
+sentencepiece
+torch
