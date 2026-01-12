@@ -132,14 +132,14 @@ OR
 Open VS Code terminal: Terminal → New Terminal
 
 A) Windows:
-   -python -m venv venv
-   -venv\Scripts\activate
-   -pip install -r requirements.txt
+-python -m venv venv.
+-venv\Scripts\activate.
+-pip install -r requirements.txt.
 
 B) Linux/Mac:
-   -python3 -m venv venv
-   -source venv/bin/activate
-   -pip install -r requirements.txt
+-python3 -m venv venv.
+-source venv/bin/activate.
+-pip install -r requirements.txt.
 
 4) Add yoga documents (required)
 Put all yoga .txt docs inside:
